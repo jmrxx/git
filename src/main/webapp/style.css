@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+	background-color:#191919;
+}
+
+div.contenedor {
+ 
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    right: 20%;
+    height: 101%;
+}
+
+
+/*La Navegación y header*/
+
+header{
+	width: 50%;
+}
+
+	
+nav {
+    color: #ffffff;
+    background-color: #aeaca8;
+    width:50%;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover,
+nav li a.current {
+    color: #000000;
+}
+
+
+
+	/* CSS DE LA TABLA */
+
+table {
+    border: 5px #2ecc71 solid;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+thead {
+    color: white;
+    background-color: #333333;
+}
+
+tfoot {
+    background-color: #CCCCCC;
+}
+
+thead th {
+    text-align: center;
+    border: 1px solid #999999;
+    
+}
+
+tfoot th {
+    padding: 5px;
+    text-align: right;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+thead tr:nth-child(1) th {
+    padding: 20px;
+}
+
+tbody {
+    background-color: white;
+}
+
+tbody img{
+	 margin:10px auto;
+     display:block;
+     width: 100%;
+     height: 100%
+}
+
+
+tbody th {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+tbody tr:first-child th {
+    background-color: #E0E0E0;
+    padding-left: 20px;
+}
+
+tbody tr:nth-child(7) th {
+    background-color: #E0E0E0;
+    padding-left: 20px;
+}
+
+
+tbody tr td {
+    text-align: right;
+    width: 195px;
+    padding: 8px;
+    border-left: 1px solid rgba(224, 224, 224, 0.5);
+}
+
+tbody tr:nth-child(2n+2) td {
+    background-color: #F0F0F0;
+}
+
+tbody tr:nth-child(2n+1) td {
+    background-color: #FFFFFF;
+}
+
+tbody tr th {
+    font-weight: normal;
+    width: 27%;
+    text-align: right;
+    padding: 8px;
+}
+
+tbody tr:nth-child(6) th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(12) th {
+    font-weight: bold;
+}
+
+tbody tr {
+    text-align: right;
+    padding: 5px 20px;
+}
+
+tbody tr:nth-child(1) th {
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody tr:nth-child(7) th {
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody tr:hover td {
+    background-color: #E0E0E0;
+}
+
+tbody tr td:nth-child(4) {
+    font-weight: bold;
+}
+
+tbody tr td:nth-child(5) {
+    font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+	color:white;
+}
+
+
+
+/*  Estilo del formulario    */
+
+fieldset {
+	width: 49%;
+    background-color: #191919;
+    padding: 10px;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+}
+
+legend {
+    background-image: url('img/note.png');
+    background-repeat: no-repeat;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-position: 5px 8px;
+    padding: 0px 20px 0px 20px;
+}
+
+input[type=text] {
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+  background: none;
+    margin: 20px 10px;
+    border: 2px solid #2ecc71;
+    padding: 14px 25px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+  background: #2ecc71;
+}
+
+
+label{
+color:white;
+}
+
+/* Pagina de incio */
+
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.box button{
+  background: none;
+  margin: 20px 10px;
+  border: 2px solid #2ecc71;
+  padding: 14px 25px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+ 
+}
+.box button:hover{
+  background: #2ecc71;
+}
+
+
+a{
+	 text-decoration:none;
+}
+
+div .btn_carta{
+	display: inline-block;
+}
+
+.btn_carta button{
+  background: none;
+  margin: 20px 10px;
+  border: 2px solid #2ecc71;
+  padding: 14px 25px;
+  outline: none;
+  color: white;
+  border-radius: 15px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.btn_carta button:hover{
+  background: #2ecc71;
+}
+	
+/* Style Form Index.jsp */
+
+body,
+html {
+    height: 100%;
+    background: #191919;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* No Scrollbar */
+    overflow: hidden;
+}
+
+
+/* CSS index.php, formulario */
+
+.box {
+    width: 300px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+}
+
+.titulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.box input[type="text"],
+.box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 14px;
+    transition: 0.25s;
+    border: 1px solid white;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus{
+    border: 2px solid #2ecc71;
+
+}
+
+
+.box button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 150px;
+    outline: none;
+    color: white;
+    border-radius: 14px;
+    transition: 0.25s;
+}
+
+.box button[type="submit"]:hover {
+
+	background-color:#2ecc71;
+}
+
+/* Style for checkbox */
+
+    input[type="checkbox"] {
+      margin-left: 60px;
+    }
+    p {
+      margin: 0;
+      padding: 20px;
+      transition: background 0.2s;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      color:white;
+    }
+    
+    
+   .item {
+      display: flex;
+      align-items: center;
+    }
