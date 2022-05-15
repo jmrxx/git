@@ -20,14 +20,14 @@ public class login extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 
-		String nombre = request.getParameter("user");
-		String password = request.getParameter("password");
-		String captcha  = request.getParameter("checkbox");
+		String nombre = request.getParameter("user"); // obtener el nombre
+		String password = request.getParameter("password"); // obtener la contraseña
+		String captcha  = request.getParameter("checkbox"); // obtener captcha
 		
 		PrintWriter out=response.getWriter();
 		response.setContentType("text/html");
 
-		if (nombre.equals("jose") && password.equals("1") && captcha.equals("huma")) {
+		if (nombre.equals("jose") && password.equals("josemejia1234") && captcha.equals("huma")) { // comprueba si el nombre o la contraseña son iguales y el capcha para acceder a las cartas
 	
 	   
 		response.sendRedirect("crear_carta.jsp"); // Si la contraseña es correcta y la contraseña y el capcha, nos dirigira a la pagina principal
